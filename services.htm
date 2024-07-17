@@ -1,149 +1,173 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style type="text/css">
-body {
-  background-color: #EDF6F7;
-}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+		body {
+			background-color: #EDF6F7;
+			font-family: Arial, sans-serif;
+		}
 
-li {
-  float: left;
-  margin-left: 20pt;
-  text-align:center;
-  list-style-type: none;
-  padding: 14px 25px;
-  display: inline-block;
-  background-color:#DDF4F6;
-  text-decoration:none;
+		header {
+			background-color: #DDF4F6;
+			padding: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
 
-}
-.g{
-  background-color:#8396F7;
-  color: white;
-  padding: 50px;
-  margin-top:50pt;
-}
-.a2{
-	background-color:#8396F7;
-	font-size:120%;
-	padding-bottom:10pt;
-	padding-top:7pt; 	
-}
-.a{
-	margin-left:20pt;
-}
-.b { 
-	margin-left:50pt;
-	font-size:125%;
-        padding-top: 20pt;	
-}
-.c { 
-	margin-left:500pt;
-	font-size:120%;
-	              
-}
+			header img {
+				vertical-align: middle;
+			}
 
-.img-right{
-	float:right;
-}
-.img-left{
-	float:left;        
-	position: relative;
-}
-.a1{
-     color:grey;
-     font-size:125%;
-     margin-right: 500pt;
-     margin-left:50pt;
-}
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			text-align: center;
+		}
 
-.b1{
-     color:white;
-     font-size:110%;
-     margin-right: 50pt;
-     margin-left:500pt;
-}
-.log{
-	float: right;
-	margin-right: 265pt; 	
-}
+			nav ul li {
+				display: inline;
+				margin: 0 10px;
+			}
 
-                    
+				nav ul li a {
+					text-decoration: none;
+					padding: 10px 20px;
+					background-color: #DDF4F6;
+					color: black;
+					border-radius: 5px;
+				}
 
-</style>
+					nav ul li a:hover {
+						background-color: #B0D6DF;
+					}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.section {
+			background-color: #ffffff;
+			margin: 20px 0;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+
+			.section h1, .section h2 {
+				color: #333333;
+			}
+
+			.section p {
+				color: #666666;
+				font-size: 110%;
+			}
+
+			.section img {
+				max-width: 100%;
+				height: auto;
+				margin: 10px 0;
+			}
+
+		.section-grey {
+			background-color: #8396F7;
+			color: white;
+			padding: 50px;
+			text-align: center;
+		}
+
+			.section-grey p {
+				color: white;
+			}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		img.float-right {
+			float: right;
+			margin-left: 20px;
+		}
+
+		img.float-left {
+			float: left;
+			margin-right: 20px;
+		}
+
+		.section-content {
+			padding: 20px;
+		}
+	</style>
 </head>
-<body >
-<div class="a">	
-  <h1>ISBALTIC </h1>
-  <img src="images\1.jpg" />
-             <div class="log"> 
-	<img src="images\runner_logo.png" width="300"  height="78"/>
-	</div>
-
-	<ul class="">		
-		<li class=""><a href="home.htm">Home</a></li>	
-		<li class=""><a href="about_us.htm">About us</a></li>		
-		<li class=""><a href="method.htm">Methods</a></li>
-		<li class=""><a href="why_us.htm">Why us</a></li>		
-		<li class="current-menu-item"><a href="services.htm">Services</a></li>	
-		<li class=""><a href="contacts.htm">Contacts</a></li>	
-		<li class=""><a href="EU_projects.htm"><span lang="lt">EU projects</span></a></li>
-	</ul>
-</div>       
-<div class="g">
-   <h1> Services </h1>                                                                    
- </div>
-	<img src="images\14.jpg"  width="1200" height="200" />
-               		
-		            <img src="images\15.jpg" class="img-left" width="480" height="327" />
-	  <div class="a2">
-	   <div class="c">
-		<h2>Diagnostics:</h2> 
-	  </div>	
-              <div class="b1">     
-                    <p> -Analyzing the Current Environment (what to change?);</p>
-                    <p> -Determining  a New Environment (changing what for what?)</p>
-                    <p> -Simulation of the New Environment and comparing it with the Current Efficiency (what will be the results?);</p>
-                    <p> -Planning the Changes (how make the changes?).</p>
-	     </div>
-	   </div>
-		<img src="images\16.jpg" class="img-right" width="480" height="368" />
-	 <div class="b">
-		<h2>Pilot project:</h2>
-         </div>
-		<div class="a1">        
-                    <p> -Demonstrating results based on  Isbaltic</p>         
-		    <p>  (managing 10 to 30 pharmacies and comparing with</p>
-		    <p>  current performance results));</p>
-                    <p>  -Determining requirements for scaling Isbaltic</p>    
-		    <p>  (Creating a test environment to confirm the success</p>
-		    <p>	 of Isbaltic throughout the whole chain);</p>
+<body>
+	<header>
+		<h1>ISBALTIC</h1>
+		<img src="images/1.jpg" alt="ISBALTIC Logo" />
+	</header>
+	<nav>
+		<ul>
+			<li><a href="home.htm">Home</a></li>
+			<li><a href="about_us.htm">About us</a></li>
+			<li><a href="method.htm">Methods</a></li>
+			<li class="current-menu-item"><a href="why_us.htm">Why us</a></li>
+			<li><a href="services.htm">Services</a></li>
+			<li><a href="contacts.htm">Contacts</a></li>
+			<li><a href="EU_projects.htm"><span lang="lt">EU projects</span></a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="section-grey">
+			<h1>Services</h1>
 		</div>
-		        <img src="images\17.jpg" class="img-left" width="470" height="350" />	
-		<div class="a2">
-		  <div class="c">
+		<div class="section">
+			<img src="images/14.jpg" alt="Image 14" />
+		</div>
+		<div class="section clearfix">
+			<img src="images/15.jpg" class="float-left" alt="Image 15" />
+			<div class="section-content">
+				<h2>Diagnostics:</h2>
+				<p>- Analyzing the Current Environment (what to change?);</p>
+				<p>- Determining a New Environment (changing what for what?);</p>
+				<p>- Simulation of the New Environment and comparing it with the Current Efficiency (what will be the results?);</p>
+				<p>- Planning the Changes (how to make the changes?).</p>
+			</div>
+		</div>
+		<div class="section clearfix">
+			<img src="images/16.jpg" class="float-right" alt="Image 16" />
+			<div class="section-content">
+				<h2>Pilot project:</h2>
+				<p>- Demonstrating results based on Isbaltic (managing 10 to 30 pharmacies and comparing with current performance results);</p>
+				<p>- Determining requirements for scaling Isbaltic (Creating a test environment to confirm the success of Isbaltic throughout the whole chain);</p>
+			</div>
+		</div>
+		<div class="section clearfix">
+			<img src="images/17.jpg" class="float-left" alt="Image 17" />
+			<div class="section-content">
 				<h2>Implementing Solutions:</h2>
-                  </div>
-		    <div class="b1">
-                   	 <p> -Team Building;</p>
-                   	 <p> -Creating Control Center;</p>
-                   	 <p> -Fast Implementation;</p>
-                         <p> -Results after 1 to 3 months;</p>
-                         <p> -Pays back in less than 6 months.</p>
-		    </div>
+				<p>- Team Building;</p>
+				<p>- Creating Control Center;</p>
+				<p>- Fast Implementation;</p>
+				<p>- Results after 1 to 3 months;</p>
+				<p>- Pays back in less than 6 months.</p>
+			</div>
 		</div>
-	
-			
-		             <img src="images\18.jpg" class="img-right" width="420" height="295" />
-		  <div class="b">	
+		<div class="section clearfix">
+			<img src="images/18.jpg" class="float-right" alt="Image 18" />
+			<div class="section-content">
 				<h2>Improvement of Process:</h2>
-                  </div>
-		    <div class="a1">
-                   	 <p> -Identifying Current Limitations;</p>
-                   	 <p> -Help Determining a Strategy;</p>
-                   	 <p> -Help Deciding Tactics;</p>
-                   	 <p> -Help Executing.</p>		 
-		   </div>
-</body>         
-</html>				
+				<p>- Identifying Current Limitations;</p>
+				<p>- Help Determining a Strategy;</p>
+				<p>- Help Deciding Tactics;</p>
+				<p>- Help Executing.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

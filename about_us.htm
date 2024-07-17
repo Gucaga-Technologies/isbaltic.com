@@ -1,90 +1,138 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style type="text/css">
-body {
-  background-color: #EDF6F7;
-}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+		body {
+			background-color: #EDF6F7;
+			font-family: Arial, sans-serif;
+		}
 
-li {
-  float: left;
-  margin-left: 20pt;
-  text-align:center;
-  list-style-type: none;
-  padding: 14px 25px;
-  display: inline-block;
-  background-color:#DDF4F6;
-  text-decoration:none;
+		header {
+			background-color: #DDF4F6;
+			padding: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
 
-}
-.a{
-    margin-left:20pt;
-}
-.b{
-	margin-left:20pt;
-	font-size:150%;
-	color:grey;
-	margin-top: 20pt;	
-}
+			header img {
+				vertical-align: middle;
+			}
 
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			text-align: center;
+		}
 
-.g{
-  background-color:#8396F7;
-  color: white;
-  padding: 50px;
-  margin-top:50pt;
-}
-.c{
-  	text-align:center;
-	margin-top:70pt;
-}
-.log{
-	float: right;
-	margin-right: 265pt; 	
-}
+			nav ul li {
+				display: inline;
+				margin: 0 10px;
+			}
 
+				nav ul li a {
+					text-decoration: none;
+					padding: 10px 20px;
+					background-color: #DDF4F6;
+					color: black;
+					border-radius: 5px;
+				}
 
-</style>
+					nav ul li a:hover {
+						background-color: #B0D6DF;
+					}
+
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			overflow: auto;
+		}
+
+		.content, .sidebar {
+			box-sizing: border-box;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+
+		.content {
+			width: 65%;
+			float: left;
+			background-color: #ffffff;
+		}
+
+		.sidebar {
+			width: 30%;
+			float: right;
+			background-color: #DDF4F6;
+		}
+
+		h1, h2, h3 {
+			color: #333333;
+		}
+
+		p {
+			color: #666666;
+		}
+
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.section-header {
+			background-color: #8396F7;
+			color: white;
+			padding: 50px;
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		.section-content {
+			font-size: 150%;
+			color: grey;
+			margin-top: 20px;
+		}
+
+		.text-center {
+			text-align: center;
+			margin-top: 70px;
+		}
+	</style>
 </head>
-<body >
-<div class="a">	
-  <h1>ISBALTIC </h1>
-  <img src="images\1.jpg" />
-              <div class="log"> 
-	<img src="images\runner_logo.png" width="300"  height="78"/>
+<body>
+	<header>
+		<h1>ISBALTIC</h1>
+		<img src="images/1.jpg" alt="ISBALTIC Logo" />
+
+	</header>
+	<nav>
+		<ul>
+			<li class="current_menu_item"><a href="home.htm">Home</a></li>
+			<li><a href="about_us.htm">About us</a></li>
+			<li><a href="method.htm">Methods</a></li>
+			<li><a href="why_us.htm">Why us</a></li>
+			<li><a href="services.htm">Services</a></li>
+			<li><a href="contacts.htm">Contacts</a></li>
+			<li><a href="EU_projects.htm"><span lang="lt">EU projects</span></a></li>
+		</ul>
+	</nav>
+	<div class="section-header">
+		<h1>About company</h1>
 	</div>
-	<ul>		
-		<li class="current_menu_item"><a href="home.htm">Home</a></li>	
-		<li class=""><a href="about_us.htm">About us</a></li>		
-		<li class=""><a href="method.htm">Methods</a></li>
-		<li class=""><a href="why_us.htm">Why us</a></li>		
-		<li class=""><a href="services.htm">Services</a></li>	
-		<li class=""><a href="contacts.htm">Contacts</a></li>	
-		<li class=""><a href="EU_projects.htm"><span lang="lt">EU projects</span></a></li>
-	</ul>
-<div class="g">
-   <h1> About company </h1>                                                                    
- </div>
-<div class="b">
-	
-				<p>- More than 10 years of Experience on the Market; </p>
-				<br />
-				<p> - The Company Started Operating in 2005. Our First Projects were with Factories and Distributors;</p>
-				<br />				
-				<p>	 - We developed our First Pharmaceutical Network in 2007. This Network Contained 8 Pharmacies;</p>
-				<br />
-				<p>	 - A Separate Pharmaceutical Branch of The Company Started in 2012;</p>
-				<br />
-				<p>	 - We are Experts in the Pharmaceutical Business. We Work with Chains in Many Different Countries.</p>
-				
-</div>
-<div class="c">
-                                <p>
-		We are a Team of Ambitious, Responsible and Self-motivated People. Our People have Studied Management and Logistics in Europe, Israel and
-	        the United States. Our Team has Extensive amount of Experience with a Variety of Distribution Networks and Manufacturing Plants. Some of our
-	        Most Successful Projects are Pharmaceutical Logistics Networks in Russia, Ukraine, Moldova, Lithuania, Latvia and Poland.
-	</p>
-</div>
+	<div class="container clearfix">
+		<div class="section-content">
+			<p>- More than 10 years of Experience on the Market;</p>
+			<p>- The Company Started Operating in 2005. Our First Projects were with Factories and Distributors;</p>
+			<p>- We developed our First Pharmaceutical Network in 2007. This Network Contained 8 Pharmacies;</p>
+			<p>- A Separate Pharmaceutical Branch of The Company Started in 2012;</p>
+			<p>- We are Experts in the Pharmaceutical Business. We Work with Chains in Many Different Countries.</p>
+		</div>
+	</div>
+	<div class="container clearfix">
+		<div class="text-center">
+			<p>We are a Team of Ambitious, Responsible and Self-motivated People. Our People have Studied Management and Logistics in Europe, Israel and the United States. Our Team has Extensive amount of Experience with a Variety of Distribution Networks and Manufacturing Plants. Some of our Most Successful Projects are Pharmaceutical Logistics Networks in Russia, Ukraine, Moldova, Lithuania, Latvia and Poland.</p>
+		</div>
+	</div>
 </body>
 </html>
